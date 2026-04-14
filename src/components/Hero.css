@@ -37,6 +37,14 @@
   max-width: 900px;
 }
 
+.hero-logo {
+  width: 250px;
+  height: auto;
+  margin: 0 auto 24px;
+  display: block;
+  filter: invert(1) drop-shadow(0 0 20px #e63946);
+}
+
 .hero-eyebrow {
   font-family: 'Rajdhani', sans-serif;
   font-size: 0.85rem;

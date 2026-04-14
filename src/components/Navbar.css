@@ -25,26 +25,14 @@
 
 .nav-logo {
   display: flex;
-  flex-direction: column;
-  line-height: 1;
-  gap: 0;
+  align-items: center;
 }
 
-.logo-empire {
-  font-family: 'Bebas Neue', sans-serif;
-  font-size: 1.8rem;
-  color: var(--accent);
-  letter-spacing: 4px;
-  line-height: 1;
-}
-
-.logo-sub {
-  font-family: 'Rajdhani', sans-serif;
-  font-size: 0.6rem;
-  font-weight: 700;
-  letter-spacing: 6px;
-  color: var(--text-secondary);
-  text-transform: uppercase;
+.nav-logo-img {
+  height: 70px;
+  width: auto;
+  display: block;
+  filter: invert(1) drop-shadow(0 0 20px #e63946);
 }
 
 .nav-links {
