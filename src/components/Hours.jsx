@@ -1,12 +1,12 @@
 import './Hours.css'
 
 const schedule = [
-  { day: 'Monday', hours: '8:00 AM – 6:00 PM' },
-  { day: 'Tuesday', hours: '8:00 AM – 6:00 PM' },
-  { day: 'Wednesday', hours: '8:00 AM – 6:00 PM' },
-  { day: 'Thursday', hours: '8:00 AM – 6:00 PM' },
-  { day: 'Friday', hours: '8:00 AM – 6:00 PM' },
-  { day: 'Saturday', hours: '9:00 AM – 4:00 PM' },
+  { day: 'Monday', hours: '9:00 AM – 5:00 PM' },
+  { day: 'Tuesday', hours: '9:00 AM – 5:00 PM' },
+  { day: 'Wednesday', hours: '9:00 AM – 5:00 PM' },
+  { day: 'Thursday', hours: '9:00 AM – 5:00 PM' },
+  { day: 'Friday', hours: '9:00 AM – 5:00 PM' },
+  { day: 'Saturday', hours: 'Closed' },
   { day: 'Sunday', hours: 'Closed' },
 ]
 
@@ -16,8 +16,7 @@ function isOpen() {
   const hour = now.getHours()
   const minute = now.getMinutes()
   const time = hour + minute / 60
-  if (day >= 1 && day <= 5) return time >= 8 && time < 18
-  if (day === 6) return time >= 9 && time < 16
+  if (day >= 1 && day <= 5) return time >= 9 && time < 17
   return false
 }
 
